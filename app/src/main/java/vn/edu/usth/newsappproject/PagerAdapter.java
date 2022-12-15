@@ -14,6 +14,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
         tabcount = behavior;
     }
 
+
     @NonNull
     @Override
     public Fragment getItem(int position) {
