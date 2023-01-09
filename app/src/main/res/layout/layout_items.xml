@@ -1,71 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:layout_margin="2dp"
-        app:cardCornerRadius="10dp"
-        android:elevation="5dp"
-        android:id="@+id/cardview">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageview"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:id="@+id/mTitle"
             android:padding="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/photo">
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:text="Main Heading"
+            android:textSize="20sp"
+            android:textStyle="bold">
 
-        </ImageView>
+        </TextView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/content"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ellipsize="end"
                 android:maxLines="6"
                 android:padding="5dp"
-                android:text="Main Content"
                 android:textSize="20sp"
-                android:textStyle="italic"></TextView>
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="at:"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                android:textStyle="bold">
+                android:textStyle="italic"
+                android:text="Main Content"
+                android:id="@+id/mContent">
 
             </TextView>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_headline"
+                android:src="@drawable/ic_launcher_background">
 
+            </ImageView>
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:id="@+id/mSource"
+            android:textColor="#C40C2A"
+            android:padding="5dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mPublishedAt"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Published At"
+            android:textStyle="bold"
+            android:textSize="12sp">
+
+        </TextView>
+
     </LinearLayout>
-    </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
