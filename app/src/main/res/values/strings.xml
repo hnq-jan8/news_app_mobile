@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">NewsAppProject</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">NewsApp</string>
+    <string name="api_key" translatable="false">bbabdd46b012465a9dafc1e51315e808</string>
+    <string name="general">general</string>
+    <string name="entertainment">entertainment</string>
+    <string name="business">business</string>
+    <string name="health">health</string>
+    <string name="science">science</string>
+    <string name="sports">sports</string>
+    <string name="technology">technology</string>
+    <string name="General_FR">Général</string>
+    <string name="Entertainment_FR">Divertissement</string>
+    <string name="Business_FR">Affaires</string>
+    <string name="Health_FR">Santé</string>
+    <string name="Science_FR">Sciences</string>
+    <string name="Sports_FR">Sports</string>
+    <string name="Technology_FR">Tech</string>
+    <string name="url_button">Continue reading</string>
 </resources>
