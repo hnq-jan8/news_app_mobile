@@ -32,7 +32,7 @@
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_view"
-            app:defaultQueryHint="Search News..."
+            app:defaultQueryHint="Rechercher..."
             app:iconifiedByDefault="false"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
