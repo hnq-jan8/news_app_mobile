@@ -1,5 +1,6 @@
 package com.example.newsapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,17 +32,21 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
+
         holder.news_title.setText(headlines.get(position).getTitle());
         holder.news_source.setText(headlines.get(position).getSource().getName());
         holder.news_publishedAt.setText(headlines.get(position).getPublishedAt());
         holder.news_content.setText(headlines.get(position).getContent());
+
         if (headlines.get(position).getUrlToImage()!=null){
+
             Picasso.get().load(headlines.get(position).getUrlToImage()).into(holder.img_headline);
 
         }
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 listener.OnNewsClicked(headlines.get(position));
@@ -53,5 +58,6 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder>{
     public int getItemCount() {
 
         return headlines.size();
+
     }
 }

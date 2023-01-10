@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">NewsApp</string>
-    <string name="api_key" translatable="false">f27c60cef3b74b5894dac5cb6b9991e4</string>
+    <string name="api_key" translatable="false">bbabdd46b012465a9dafc1e51315e808</string>
     <string name="general">general</string>
     <string name="entertainment">entertainment</string>
     <string name="business">business</string>
@@ -15,4 +15,5 @@
     <string name="Science_FR">Sciences</string>
     <string name="Sports_FR">Sports</string>
     <string name="Technology_FR">Tech</string>
+    <string name="url_button">Continue reading</string>
 </resources>

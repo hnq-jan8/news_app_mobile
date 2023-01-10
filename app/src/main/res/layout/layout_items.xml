@@ -54,7 +54,7 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:id="@+id/image_headline"
-                android:src="@drawable/ic_launcher_background">
+                android:src="@drawable/not_found">
 
             </ImageView>
         </LinearLayout>

@@ -1,4 +1,6 @@
-package com.example.newsapp.Models;
+package com.example.newsapp.Api;
+
+import com.example.newsapp.Models.NewsHeadlines;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,23 +14,11 @@ public class ApiResponse implements Serializable {
         return status;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
     public int getTotalResults() {
         return totalResults;
     }
 
-    public void setTotalResults(int totalResults) {
-        this.totalResults = totalResults;
-    }
-
     public List<NewsHeadlines> getArticles() {
         return articles;
-    }
-
-    public void setArticles(List<NewsHeadlines> articles) {
-        this.articles = articles;
     }
 }

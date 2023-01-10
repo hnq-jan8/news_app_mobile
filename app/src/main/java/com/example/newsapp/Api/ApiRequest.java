@@ -3,7 +3,6 @@ package com.example.newsapp.Api;
 import android.content.Context;
 
 import com.example.newsapp.FetchData;
-import com.example.newsapp.Models.ApiResponse;
 import com.example.newsapp.R;
 
 import retrofit2.Call;
